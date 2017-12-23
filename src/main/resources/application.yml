@@ -11,3 +11,8 @@ cloud:
 endpoints:
     enabled: true
     sensitive: false
+
+spring:
+    redis:
+        host: example-elasticache.cssx8g.0001.usw2.cache.amazonaws.com
+        port: 6379
