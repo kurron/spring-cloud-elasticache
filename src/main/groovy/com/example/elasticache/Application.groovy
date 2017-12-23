@@ -1,4 +1,4 @@
-package com.example.sqs.sqs
+package com.example.elasticache
 
 import com.amazonaws.services.sqs.AmazonSQSAsync
 import groovy.util.logging.Slf4j
@@ -15,7 +15,7 @@ import org.springframework.scheduling.annotation.Scheduled
 
 @Slf4j
 @SpringBootApplication
-class SqsApplication {
+class Application {
 
     /**
      * Manages interactions with the queue.
@@ -57,6 +57,6 @@ class SqsApplication {
     }
 
     static void main( String[] args ) {
-        SpringApplication.run SqsApplication, args
+        SpringApplication.run Application, args
     }
 }
